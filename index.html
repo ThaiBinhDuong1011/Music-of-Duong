@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon.jpg">
+    <title>Music of Dương</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="https://kit.fontawesome.com/60a0e11432.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="player">
+        <div class="play-zone">
+            <i class="fa-solid fa-sun"></i>
+            <i id="moon" class="fa-solid fa-moon"></i>
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb"></div>
+            </div>
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fa-solid fa-play icon-play"></i>
+                    <i class="fa-solid fa-pause icon-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+            <input class="play-progress" type="range" min="0" max="100" step="0.05" value="0">
+            <audio id="audio" src=""></audio>
+            <!-- Play List -->
+        </div>
+        <div class="playlist"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
